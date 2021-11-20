@@ -18,11 +18,11 @@ Note: we will be copying the custom Prometheus.yml file included in this project
 You all set provisioning your ec2 instance
 Step 8. 
 From your terminal, run the following command to copy your Prometheus.yml file in this project to your /opt/ directory of your instance
-	scp -i ~/Desktop/ec2-key.pem -r ~/Desktop/DevOps/Terraform/helloworld/prometheus.yml ubuntu@ec2-3-21-125-229.us-east-2.compute.amazonaws.com:~/opt/
+	scp -i ~/your/path/to/your-key.pem -r ~/path/to/your/working/directory/prometheus.yml your_ec2_user@your_dns_address:~/opt/
 
 Step 9. 
 Now ssh into your instance and run the following command to deploy Prometheus docker to monitor your instance. Already docker is installed while provisioning the ec2 instance.
-   docker run -d --name prometheus-cont -p 9090:9090 prom/prometheus
+   docker run -p 9090:9090 prom/prometheus
 
-Now go to your browser and enter public_IP:9090
+Now go to your browser and enter public_IP:Prometheus_port
 You can navigate through and view the metrics from your server
