@@ -8,3 +8,5 @@ echo "Hello world, from apache tomcat" | sudo tee /var/www/html/index.html
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo service docker start
+#install apache-exporter
+docker run -d -p 9117:9117 bitnami/apache-exporter:latest
