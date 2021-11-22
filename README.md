@@ -6,7 +6,7 @@ Create a working directory, on your desktop, name it ‘terraform’; you can gi
 Step 3. 
 Create a free aws account, create user, generate key pair, access key and secrete key to use later, make sure to download the .pem key pair to your preferred directory. 
 Step 4. 
-Look up for your closest aws region and your prefered ami, copy aim id somewhere to use later. For this project, the commands used works well with ubuntu flavor. I prefer you use the same in order to achieve the desired results, ami is region specific.
+Look up for your closest aws region and your prefered ami, copy aim id somewhere to use later. For this project, the commands used works well with Ubuntu Server 20.04 LTS (64-bit Arm). I prefer you use the same in order to achieve the desired results, ami is region specific.
 Step 5. 
 Clone repo to your working folder
 Step 6. 
