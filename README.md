@@ -12,10 +12,13 @@ Clone repo to your working folder
 Step 6. 
 From your terminal, cd into your working directory
 Step 7. 
-Terraform init, validate, terraform plan and terraform apply
+Run commands:
+- terraform init 
+- terraform validate
+- terraform plan
+- terraform apply
 Enter values whenever prompted. copy the outputs from public ip and DNS address to use it later.
 You all set provisioning your ec2 instance
 Step 8. 
 Now go to your browser and enter public_IP:9090
 You can navigate through and view the metrics from your server
-***** alternatively you can create a custom prometheus image with the file you created and build a new image that can run to deploy prometheus docker container with your predefined targets*****
